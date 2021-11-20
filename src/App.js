@@ -1,25 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import DesktopScreen from "./components/DesktopScreen/DesktopScreen";
+
+// Pages
+import Splash from './pages/splash/Splash';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  let screenWidth = window.innerWidth;
+  let desktopScreen = false;
+  if (screenWidth > 1024) {
+    desktopScreen = true;
+  }
+  return desktopScreen ? (
+    <DesktopScreen />
+  ) : (
+    <Splash />
   );
 }
 
