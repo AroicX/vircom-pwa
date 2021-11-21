@@ -17,7 +17,7 @@ const SignIn = () => {
     navigate("/signup");
   };
   return (
-    <div className="flex flex-col justify-center px-8">
+    <div className="flex flex-col justify-center px-6">
       <div className="flex items-center justify-center mt-32 mb-24">
         <img src={VIRCOM} alt="Title" />
       </div>
@@ -48,7 +48,7 @@ const SignIn = () => {
         </div>
       </div>
 
-      <p className="text-center font-medium font-roboto text-sm text-form my-15">
+      <p className="text-center font-medium font-roboto text-sm text-form my-14">
         Don’t have an account?{" "}
         <span className="text-primary cursor-pointer" onClick={next}>
           Sign up
