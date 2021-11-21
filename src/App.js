@@ -1,9 +1,11 @@
 import React from "react";
 import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import DesktopScreen from "./components/DesktopScreen/DesktopScreen";
 
 // Pages
-import Splash from './pages/splash/Splash';
+import Splash from "./pages/splash/Splash";
+import SignIn from "./pages/SignIn/SignIn";
 
 function App() {
   let screenWidth = window.innerWidth;
@@ -14,7 +16,16 @@ function App() {
   return desktopScreen ? (
     <DesktopScreen />
   ) : (
-    <Splash />
+    // <Splash />
+    <>
+      <Router>
+        <Routes>
+          <Route path="/signin" element={<SignIn />} />
+
+          <Route path="/" element={<Splash />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 
