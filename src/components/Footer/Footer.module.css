@@ -1,0 +1,38 @@
+.FooterContainer {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 11px -1px rgba(0, 0, 0, 0.25);
+  height: 3.31em;
+}
+
+.Active .HomeSVG {
+  width: 1.875em;
+  height: 1.69em;
+}
+
+.Active path {
+  fill: #27b352;
+}
+
+.NotActive path {
+  fill: #797878;
+}
+
+.Active .LifeStyle {
+  width: 1.89em;
+  height: 1.81em;
+}
+
+.Active .Post {
+  width: 1.75em;
+  height: 1.69em;
+}
+
+.Active .Profile {
+  width: 1.81em;
+  height: 1.81em;
+}
+
+.Active .Connect {
+  width: 2.25em;
+  height: 1.84em;
+}

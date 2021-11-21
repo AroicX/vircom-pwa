@@ -7,6 +7,7 @@ import DesktopScreen from "./components/DesktopScreen/DesktopScreen";
 import Splash from "./pages/splash/Splash";
 import SignIn from "./pages/SignIn/SignIn";
 import SignUp from "./pages/SignUp/SignUp";
+import Home from "./pages/Home/Home";
 
 function App() {
   let screenWidth = window.innerWidth;
@@ -23,6 +24,7 @@ function App() {
         <Routes>
           <Route path="/signin" element={<SignIn />} />
           <Route path='/signup' element={<SignUp />}/>
+          <Route path='/home' element={<Home />}/>
           <Route path="/" element={<Splash />} />
         </Routes>
       </Router>

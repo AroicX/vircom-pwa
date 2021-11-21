@@ -9,7 +9,8 @@ module.exports = {
       colors: {
         'header': '#413D3D',
         'form' : "#797878",
-        'primary': '#27B352'
+        'primary': '#27B352',
+        'ash': '#E2E2E2'
       }
     },
   },
