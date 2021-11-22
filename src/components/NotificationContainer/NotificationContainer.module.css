@@ -1,0 +1,33 @@
+.MessageDetailsContaner {
+    border-bottom: 1px solid #c4c4c4;
+  }
+  
+  .Username {
+    font-size: 1.125rem;
+    letter-spacing: -0.025em;
+  }
+  
+  .Message {
+    font-size: 0.69rem;
+    letter-spacing: -0.025em;
+  }
+  
+  .Online{
+    font-size: 0.69rem;
+  }
+
+  .Love {
+      height: 0.5em;
+      width: 0.625em;
+  }
+
+  .Like {
+      width: 0.5625em;
+      height: 0.6875em;
+  }
+  
+  .Date {
+    font-size: 0.69rem;
+    letter-spacing: -0.025em;
+  }
+  
