@@ -1,0 +1,27 @@
+.LockButtonContainer {
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.LockButton {
+  width: 4.25rem;
+  height: 1.94rem;
+  box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.SmallDot {
+  width: 0.44em;
+  height: 0.44em;
+  border-radius: 50%;
+}
+
+.FriendButton {
+  box-shadow: 0px 3px 11px -1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-size: 1.125rem;
+  letter-spacing: -0.025em;
+}
+
+.AllMessageContianer {
+  background-color: #f1f4f1;
+}

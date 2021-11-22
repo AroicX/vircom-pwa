@@ -1,0 +1,32 @@
+.MessageDetailsContaner {
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.Username {
+  font-size: 1.125rem;
+  letter-spacing: -0.025em;
+}
+
+.Message {
+  font-size: 0.69rem;
+  letter-spacing: -0.025em;
+}
+
+.Unread {
+  height: 1.125rem;
+  width: 1.125rem;
+  border-radius: 50%;
+}
+
+.Read {
+    opacity: 0;
+}
+
+.Unread p {
+  font-size: 0.69rem;
+}
+
+.Date {
+  font-size: 0.69rem;
+  letter-spacing: -0.025em;
+}
