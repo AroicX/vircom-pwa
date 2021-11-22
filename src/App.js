@@ -11,6 +11,7 @@ import Home from "./pages/Home/Home";
 import LifeStyle from "./pages/LifeStyle/LifeStyle";
 import Post from "./pages/Post/Post";
 import Profile from "./pages/Profile/Profile";
+import Connect from "./pages/Connect/Connect";
 
 function App() {
   let screenWidth = window.innerWidth;
@@ -31,6 +32,7 @@ function App() {
           <Route path="/lifestyle" element={<LifeStyle />} />
           <Route path="/post" element={<Post />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/connect" element={<Connect />} />
           <Route path="/" element={<Splash />} />
         </Routes>
       </Router>
