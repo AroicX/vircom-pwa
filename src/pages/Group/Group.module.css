@@ -1,0 +1,25 @@
+.HeaderContainer {
+    height: 10.94em;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .Status {
+    width: 8.5625rem;
+    letter-spacing: -0.025em;
+    font-size: 0.6875rem;
+    margin-top: -0.5em;
+  }
+  
+  .FollowButton {
+    border-radius: 9px;
+    width: 6.625rem;
+    height: 1.875rem;
+    font-size: 0.6875rem;
+    letter-spacing: -0.025em;
+  }
+  
+  .ProfileOptionContainer {
+    border-bottom: 1px solid #c4c4c4;
+  }
+  
