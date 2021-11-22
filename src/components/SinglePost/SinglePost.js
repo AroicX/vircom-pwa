@@ -26,7 +26,7 @@ const SinglePost = ({username, userImage, followingstatus, date}) => {
           <div className={`flex justify-betwen`}>
             <div className={`flex flex-col justify-between mr-3`}>
               <button
-                className={`bg-primary text-white font-roboto font-medium ${classes.FollowButton}`}
+                className={`bg-primary text-white font-roboto font-medium ${followingstatus ? '': 'opacity-0'} ${classes.FollowButton}`}
               >
                 {followingstatus}
               </button>

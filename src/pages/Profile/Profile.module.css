@@ -1,0 +1,15 @@
+.HeaderContainer {
+  height: 10.94em;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Status {
+  width: 8.5625rem;
+  letter-spacing: -0.025em;
+  font-size: 0.75rem;
+}
+
+.ProfileOptionContainer {
+  border-bottom: 1px solid #c4c4c4;
+}
