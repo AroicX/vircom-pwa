@@ -2,13 +2,12 @@ import React from "react";
 
 import classes from "./SinglePost.module.css";
 
-import PostedImage from "../../assets/PostedImage1.png";
 import Like from '../../assets/like.svg';
 import Love from '../../assets/love.svg';
 import Share from '../../assets/share.svg';
 import Comment from '../../assets/comment.svg';
 
-const SinglePost = ({username, userImage, followingstatus, date}) => {
+const SinglePost = ({username, userImage, followingstatus, date, postedImage}) => {
   return (
     <div className={`flex flex-col w-full mt-2 pb-2 ${classes.SinglePostContainer}`}>
       <div className={`flex items-center px-6 pb-2`}>
@@ -41,7 +40,7 @@ const SinglePost = ({username, userImage, followingstatus, date}) => {
         </div>
       </div>
       <div className={`w-full`}>
-        <img src={PostedImage} alt="Post" className={`max-w-full`} />
+        <img src={postedImage} alt="Post" className={`max-w-full`} />
       </div>
       <div className={`px-2 pt-2`}>
           <div className={`px-2 flex justify-between items-center pb-2 ${classes.ReactionContainer}`}>

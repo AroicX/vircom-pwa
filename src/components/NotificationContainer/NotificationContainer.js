@@ -33,7 +33,7 @@ const NotificationContainer = ({
               >
                 Reacted to your Post
               </p>
-              <img src={Like} alt="Like" className={`${classes.Like}`}/>
+              <img src={Like} alt="Like" className={`${classes.Like}`} />
             </div>
           ) : (
             ""
@@ -45,7 +45,7 @@ const NotificationContainer = ({
               >
                 Reacted to your Post
               </p>
-              <img src={Love} alt="Love" className={`${classes.Love}`}/>
+              <img src={Love} alt="Love" className={`${classes.Love}`} />
             </div>
           ) : (
             ""
@@ -80,9 +80,9 @@ const NotificationContainer = ({
             {date}
           </p>
           <p
-            className={`text-secondary font-roboto font-medium ${classes.Online} ${
-              online ? "" : "opacity-0"
-            }`}
+            className={`text-secondary font-roboto font-medium ${
+              classes.Online
+            } ${online ? "" : "opacity-0"}`}
           >
             {online ? "online" : ""}
           </p>

@@ -8,6 +8,7 @@ import SinglePost from "../../components/SinglePost/SinglePost";
 
 // Images
 import UserImage from "../../assets/PostUserImage.png";
+import PostedImage from "../../assets/PostedImage2.png";
 import Header from "../../assets/header.png";
 import Avatar from "../../assets/avatar.png";
 import Media from "../../assets/media.svg";
@@ -55,6 +56,7 @@ const Profile = () => {
         username="Elijah Gabriel"
         userImage={UserImage}
         date="Just now"
+        postedImage={PostedImage}
       />
       <Footer />
     </div>

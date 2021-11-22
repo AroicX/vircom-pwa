@@ -7,6 +7,7 @@ import SinglePost from "../../components/SinglePost/SinglePost";
 // Images
 import UserImage1 from "../../assets/PostUserImage.png";
 import UserImage2 from "../../assets/PostUserImage2.png";
+import PostedImage from "../../assets/PostedImage1.png";
 
 const Home = () => {
   return (
@@ -17,12 +18,14 @@ const Home = () => {
         username="Elijah Gabriel"
         date="23, Nov"
         followingstatus="Follow"
+        postedImage={PostedImage}
       />
       <SinglePost
         userImage={UserImage2}
         username="Peace John"
         date="23, Oct"
         followingstatus="Following"
+        postedImage={PostedImage}
       />
       <Footer />
     </div>

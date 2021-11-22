@@ -9,12 +9,12 @@ const SuggestionContainer = ({ avatar, username, friend }) => {
     >
       <img src={avatar} alt="Avatar" className={``} />
       <p
-        className={`font-roboto font-medium text-secondary pt-2 ${classes.Username}`}
+        className={`font-roboto font-medium text-secondary pt-1 ${classes.Username}`}
       >
         {username}
       </p>
       <p
-        className={`font-roboto font-medium text-primary py-4 ${classes.Action}`}
+        className={`font-roboto font-medium text-primary pt-3 ${classes.Action}`}
       >
         {" "}
         {friend ? "Connect" : "Join Group"}{" "}
