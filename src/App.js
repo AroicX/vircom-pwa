@@ -14,6 +14,7 @@ import Profile from "./pages/Profile/Profile";
 import Connect from "./pages/Connect/Connect";
 import Notification from "./pages/Notification/Notification";
 import Chat from './pages/Chat/Chat';
+import Friend from './pages/UserProfile/UserProfile';
 
 function App() {
   let screenWidth = window.innerWidth;
@@ -37,6 +38,7 @@ function App() {
           <Route path="/connect" element={<Connect />} />
           <Route path="/notification" element={<Notification />}/>
           <Route path="/chat" element={<Chat />}/>
+          <Route path="/friend" element={<Friend />}/>
           <Route path="/" element={<Splash />} />
         </Routes>
       </Router>
