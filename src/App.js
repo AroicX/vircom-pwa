@@ -9,6 +9,7 @@ import SignIn from "./pages/SignIn/SignIn";
 import SignUp from "./pages/SignUp/SignUp";
 import Home from "./pages/Home/Home";
 import LifeStyle from "./pages/LifeStyle/LifeStyle";
+import Post from "./pages/Post/Post";
 
 function App() {
   let screenWidth = window.innerWidth;
@@ -27,6 +28,7 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/home" element={<Home />} />
           <Route path="/lifestyle" element={<LifeStyle />} />
+          <Route path="/post" element={<Post />}/>
           <Route path="/" element={<Splash />} />
         </Routes>
       </Router>
