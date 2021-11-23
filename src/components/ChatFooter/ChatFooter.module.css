@@ -1,0 +1,25 @@
+.ChatAreaContainer {
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 34px;
+  height: 2.875em;
+}
+
+.VoiceRecorderContainer {
+  min-width: 2.875em;
+  height: 2.875em;
+  border-radius: 50%;
+  border: 1px solid #c4c4c4;
+}
+
+.EmojiContainer {
+  border-right: 0.5px solid #797878;
+  height: 2em;
+}
+
+.InputArea {
+  font-size: 0.8125rem;
+  letter-spacing: -0.025em;
+  line-height: 0.94em;
+  color: #c4c4c4;
+}

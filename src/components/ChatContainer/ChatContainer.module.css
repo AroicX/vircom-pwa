@@ -1,0 +1,26 @@
+.ChatContainer {
+  min-height: 4.25em;
+  max-width: 50%;
+  border-radius: 10px;
+}
+
+.Message {
+  max-width: 5.9rem;
+  letter-spacing: -0.025em;
+}
+
+.Date {
+  font-size: 0.6875rem;
+  letter-spacing: -0.025em;
+  color: #656060;
+}
+
+.Recieved {
+  background-color: #67f492;
+  margin-right: auto;
+}
+
+.Sent {
+  background-color: #e2e2e2;
+  margin-left: auto;
+}
