@@ -1,0 +1,76 @@
+.Backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  z-index: 2;
+  transition: transform 0.1s ease-in;
+}
+
+.MenuSecondContainer {
+  width: 20.69em;
+  height: inherit;
+  padding-bottom: 10em;
+}
+
+.Avatar {
+  height: 5.94em;
+  width: 5.94em;
+}
+
+.Gmail {
+  font-size: 0.69rem;
+}
+
+.Active {
+  display: flex;
+  align-items: center;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  padding-left: 2em;
+  background-color: rgba(39, 179, 82, 0.47);
+}
+
+.Active path {
+  fill: #27b352;
+}
+
+.Active p {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 1.125rem;
+  letter-spacing: -0.025em;
+  color: #000000;
+}
+
+.InActive {
+  display: flex;
+  align-items: center;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  padding-left: 2em;
+}
+
+.InActive p {
+  font-family: "Roboto";
+  font-size: 0.875rem;
+  color: #434141;
+}
+
+.InActive path {
+  fill: #797878;
+}
+
+.SignOut {
+  display: flex;
+  align-items: center;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  padding-left: 2em;
+}
+
+.SignOut p {
+  color: #F44336;
+  font-size: 0.875rem;
+  font-family: "Roboto";
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}

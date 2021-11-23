@@ -16,11 +16,11 @@ import PostUserImage4 from "../../assets/PostUserImage4.png";
 import PostUserImage5 from "../../assets/PostUserImage5.png";
 import PostUserImage6 from "../../assets/PostUserImage6.png";
 
-const LifeStyle = () => {
+const LifeStyle = ({ setIsMenu }) => {
   const [friend, setFriend] = useState(true);
   return (
     <div style={{ marginBottom: "3.31em" }}>
-      <Header />
+      <Header setIsMenu={setIsMenu} />
       <div className={`pt-2 flex flex-col`}>
         <div
           className={`flex justify-center items-center pb-3 ${
@@ -60,7 +60,9 @@ const LifeStyle = () => {
           </button>
         </div>
         {friend ? (
-          <div className={`flex flex-col px-4 ${classes.AllMessageContianer} pb-2`}>
+          <div
+            className={`flex flex-col px-4 ${classes.AllMessageContianer} pb-2`}
+          >
             <MessageContainer
               userImage={PostUserImage2}
               username="A.J Kim"
@@ -89,7 +91,9 @@ const LifeStyle = () => {
             />
           </div>
         ) : (
-          <div className={`flex flex-col px-4 ${classes.AllMessageContianer} pb-2`}>
+          <div
+            className={`flex flex-col px-4 ${classes.AllMessageContianer} pb-2`}
+          >
             <MessageContainer
               userImage={PostUserImage6}
               username="Plateau Farmers"

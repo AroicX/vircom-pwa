@@ -13,10 +13,10 @@ import PostUserImage3 from "../../assets/PostUserImage3.png";
 import PostUserImage4 from "../../assets/PostUserImage4.png";
 import PostUserImage5 from "../../assets/PostUserImage5.png";
 
-const Nofitication = () => {
+const Nofitication = ({ setIsMenu }) => {
   return (
     <div style={{ marginBottom: "3.31em" }}>
-      <Header />
+      <Header setIsMenu={setIsMenu} />
       <div className={`pt-6 ${classes.NotificationsContainer}`}>
         <div
           className={`flex flex-col px-4 ${classes.AllMessageContianer} pb-2`}

@@ -16,10 +16,10 @@ import PostUserImage5 from "../../assets/PostUserImage5.png";
 import UserProfileImage1 from "../../assets/UserProfile1.png";
 import UserProfileImage2 from "../../assets/UserProfile2.png";
 
-const Connect = () => {
+const Connect = ({ setIsMenu }) => {
   return (
     <div style={{ marginBottom: "3.31em" }}>
-      <Header />
+      <Header setIsMenu={setIsMenu} />
       <div className={`flex flex-col`}>
         <div className={`flex flex-col ${classes.AllSuggestionContainer}`}>
           <h2

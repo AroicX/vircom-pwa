@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import DesktopScreen from "./components/DesktopScreen/DesktopScreen";
@@ -16,6 +16,7 @@ import Notification from "./pages/Notification/Notification";
 import Chat from "./pages/Chat/Chat";
 import Friend from "./pages/UserProfile/UserProfile";
 import Group from "./pages/Group/Group";
+import Menu from "./pages/Menu/Menu";
 
 function App() {
   let screenWidth = window.innerWidth;
@@ -23,21 +24,24 @@ function App() {
   if (screenWidth > 1024) {
     desktopScreen = true;
   }
+
+  const [isMenu, setIsMenu] = useState(false);
   return desktopScreen ? (
     <DesktopScreen />
   ) : (
     // <Splash />
     <>
       <Router>
+      <Menu setIsMenu={setIsMenu} isMenu={isMenu}/>
         <Routes>
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/lifestyle" element={<LifeStyle />} />
-          <Route path="/post" element={<Post />} />
+          <Route path="/home" element={<Home setIsMenu={setIsMenu}/>} />
+          <Route path="/lifestyle" element={<LifeStyle setIsMenu={setIsMenu}/>} />
+          <Route path="/post" element={<Post setIsMenu={setIsMenu}/>} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/connect" element={<Connect />} />
-          <Route path="/notification" element={<Notification />} />
+          <Route path="/connect" element={<Connect setIsMenu={setIsMenu}/>} />
+          <Route path="/notification" element={<Notification setIsMenu={setIsMenu}/>} />
           <Route path="/chat" element={<Chat />} />
           <Route path="/friend" element={<Friend />} />
           <Route path="/group" element={<Group />} />

@@ -9,10 +9,10 @@ import UserImage1 from "../../assets/PostUserImage.png";
 import UserImage2 from "../../assets/PostUserImage2.png";
 import PostedImage from "../../assets/PostedImage1.png";
 
-const Home = () => {
+const Home = ({setIsMenu}) => {
   return (
     <div style={{ marginBottom: "3.31em" }}>
-      <Header />
+      <Header setIsMenu={setIsMenu}/>
       <SinglePost
         userImage={UserImage1}
         username="Elijah Gabriel"

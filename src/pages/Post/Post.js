@@ -13,10 +13,10 @@ import Video from "../../assets/video.svg";
 import Location from "../../assets/location.svg";
 import Tag from "../../assets/tag.svg";
 
-const Post = () => {
+const Post = ({ setIsMenu }) => {
   return (
     <div style={{ marginBottom: "3.31em" }}>
-      <Header />
+      <Header setIsMenu={setIsMenu} />
       <div className={`flex flex-col`}>
         <div className={`flex items-center py-4 px-5`}>
           <img src={UserImage} alt="User" className={"mr-5"} />
