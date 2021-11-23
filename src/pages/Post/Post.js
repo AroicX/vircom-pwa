@@ -17,7 +17,7 @@ const Post = ({ setIsMenu }) => {
   return (
     <div style={{ marginBottom: "3.31em" }}>
       <Header setIsMenu={setIsMenu} />
-      <div className={`flex flex-col`}>
+      <div className={`flex flex-col`} style={{borderTop: "5px solid #E2E2E2"}}>
         <div className={`flex items-center py-4 px-5`}>
           <img src={UserImage} alt="User" className={"mr-5"} />
           <p

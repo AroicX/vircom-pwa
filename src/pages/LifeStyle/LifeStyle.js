@@ -21,7 +21,7 @@ const LifeStyle = ({ setIsMenu }) => {
   return (
     <div style={{ marginBottom: "3.31em" }}>
       <Header setIsMenu={setIsMenu} />
-      <div className={`pt-2 flex flex-col`}>
+      <div className={`pt-2 flex flex-col`} style={{borderTop: "5px solid #E2E2E2"}}>
         <div
           className={`flex justify-center items-center pb-3 ${
             classes.LockButtonContainer
