@@ -18,49 +18,49 @@ const SignUp = () => {
     navigate("/signin");
   };
   return (
-    <div className="flex flex-col px-6 justify-center">
-      <div className="flex items-center justify-center mt-20 mb-8">
-        <img src={VIRCOM} alt="Title" />
+    <div className='flex flex-col px-6 justify-center'>
+      <div className='flex items-center justify-center mt-20 mb-8'>
+        <img src={VIRCOM} alt='Title' />
       </div>
       <div>
-        <h2 className="font-roboto font-medium text-2xl text-header">
+        <h2 className='font-roboto font-medium text-2xl text-header'>
           Create your account
         </h2>
-        <div className="py-2">
-          <Input label="Email" type="email" />
+        <div className='py-2'>
+          <Input label='Email' type='email' />
         </div>
-        <div className="py-2">
-          <Input label="Phone Number" type="text" />
+        <div className='py-2'>
+          <Input label='Phone Number' type='text' />
         </div>
-        <div className="py-2">
-          <Input label="User Name" type="text" />
+        <div className='py-2'>
+          <Input label='User Name' type='text' />
         </div>
-        <div className="py-2">
-          <Input label="Password" type="password" />
+        <div className='py-2'>
+          <Input label='Password' type='password' />
         </div>
-        <div className="py-2">
-          <Input label="Confirm Password" type="password" />
+        <div className='py-2'>
+          <Input label='Confirm Password' type='password' />
         </div>
-        <div className="py-4">
-          <BigButton value="Sign Up" />
+        <div className='py-4'>
+          <BigButton value='Sign Up' component='a' to='home' />
         </div>
-        <p className="font-roboto text-sm text-center text-form font-medium py-4">
+        <p className='font-roboto text-sm text-center text-form font-medium py-4'>
           {" "}
           or sign up with
         </p>
       </div>
-      <div className="flex items-center">
-        <div className="mr-4 w-full">
+      <div className='flex items-center'>
+        <div className='mr-4 w-full'>
           <SocialButton value={Google} />
         </div>
-        <div className="w-full">
+        <div className='w-full'>
           <SocialButton value={Facebook} />
         </div>
       </div>
 
-      <p className="text-center font-medium font-roboto text-sm text-form my-14">
+      <p className='text-center font-medium font-roboto text-sm text-form my-14'>
         Already have an account?{" "}
-        <span className="text-primary cursor-pointer" onClick={next}>
+        <span className='text-primary cursor-pointer' onClick={next}>
           Sign in
         </span>
       </p>

@@ -32,7 +32,7 @@ const SignIn = () => {
           <Input label="Password" type="password" />
         </div>
         <div className="py-4">
-          <BigButton value="Sign In" />
+          <BigButton value="Sign In" component="a" to="/home" />
         </div>
         <p className="font-roboto text-sm text-center text-form font-medium py-4">
           {" "}
